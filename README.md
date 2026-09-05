@@ -53,3 +53,10 @@ Historical match metadata is collected through the Deadlock API and stored as in
 
 The training pipeline then loads a snapshot dataset, builds team- and player-level features, and engineers additional features. XGBoost and CatBoost models are then trained and combined into a final ensemble model, which is then saved with feature-column definitions for live inference.
 
+### Live prediction pipeline
+
+During a live match, the launcher starts the live-events server and the predictor, which connects to the live event stream for the selected match. Incoming entity events update the current 'LiveMatchState'. Once both teams contain six players with the required information, the current state is converted into the model feature representation, and the model is selected according to the current game time. Then the ensemble model produces a win probability, which is written to 'prediction.json'. The PySide6 overlay reads the prediction and streams the overlay in-game.
+
+Predictions are generated once per minute rather than for every individual event.
+
+## Machine Learning
