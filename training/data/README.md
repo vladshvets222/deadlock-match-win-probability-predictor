@@ -1,5 +1,9 @@
-The training data was collected from the Deadlock API and processed into match-level snapshots at 5, 10, 15, 20, 25, 30, 35 and 40 minutes.
+Historical match data is collected from the Deadlock API and stored locally as raw JSON match metadata.
 
-Raw match metadata stored locally as individual JSON files and not included in the repository because I have collected over 75GB of data( >20.500 matches)
+The collection script requests recently fetched matches, retrieves their metadata, skips matches already stored locally, and uses concurrent requests to accelerate collection.
 
-The dataset and processed csv files can be reproduced using the scripts in 'data_collection/'
+The preprocessing pipeline converts the raw metadata into match-level snapshot datasets. Each row represents both teams at a selected point in the match and contains the eventual winning-team label.
+
+Raw match metadata is stored locally as individual JSON files and is not included in the repository because I have collected over 75GB of data( >20.500 matches)
+
+The dataset and processed CSV files can be reproduced using the scripts in 'data_collection/'
