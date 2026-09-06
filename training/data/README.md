@@ -6,4 +6,4 @@ The preprocessing pipeline converts the raw metadata into match-level snapshot d
 
 Raw match metadata is stored locally as individual JSON files and is not included in the repository because I have collected over 75GB of data( >20.500 matches)
 
-The dataset and processed CSV files can be reproduced using the scripts in 'data_collection/'
+The dataset and processed CSV files can be reproduced using the scripts in ['data_collection/'](data_collection/)
