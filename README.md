@@ -179,7 +179,7 @@ The predictions produced by this software are statistical estimates for educatio
 
 This project uses the [Deadlock API](https://github.com/deadlock-api/deadlock-api) for Deadlock match data and live event functionality. Huge appreciation and respect to the developer of this project. Without it, this project would never have a chance for existance.
 
-The project also relies on open-source Python and machine-learning libraries including XGBoost, CatBoost, pandas, numpy, scikit-learn, Joblib, PySide6, and related dependencies. See the requirements for specific versions used.
+The project also relies on open-source Python and machine-learning libraries including XGBoost, CatBoost, pandas, numpy, scikit-learn, Joblib, PySide6, and related dependencies. See the ['requirements'](requirements.txt) for specific versions used.
 
 ## License
 
