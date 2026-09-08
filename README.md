@@ -35,6 +35,10 @@ The project is designed to run a complete live application rather than only offl
 
 The overlay displays the current estimated win probability and the game time, with additional info about the model used for prediction.
 
+![Screenshot2](screenshots/Screenshot2.png)
+![Screenshot4](screenshots/Screenshot4.png)
+![Screenshot7](screenshots/Screenshot7.png)
+
 ### Launcher
 
 ![Launcher](screenshots/launcher.png)
@@ -163,7 +167,7 @@ This project has several important limitations:
 - The live server requires the live-events data source to provide the required player-, team-, and game-state information.
 - Historical and live data availability may change as the game and its API develop.
 
-Also, there are several bugs, which I would try to fix in the future.
+Also, there are several bugs, which I would try to fix in the future. For example, the time in the overlay sometimes breaks if the pause was used in-game.
 
 Additionally, I plan to train deep learning models and add more features to increase the model's reliability. Also, in **NOT** near future, I would like to try to implement an item suggestion mechanism. Furthermore, the training data and models should be regularly updated, as the meta changes every day; however, I do not promise to do so. I will update it when I have free time.
 
