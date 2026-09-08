@@ -1,0 +1,12 @@
+numpy==2.4.6
+pandas==3.0.3
+scikit-learn==1.9.0
+xgboost==3.3.0
+catboost==1.2.10
+joblib==1.5.3
+requests==2.34.2
+sseclient-py==1.9.0
+PySide6==6.9.2
+shap==0.51.0
+matplotlib==3.11.0
+plotly==6.7.0
