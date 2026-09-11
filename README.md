@@ -10,14 +10,14 @@ The system contains:
 
 - Historical match data for model training
 - Feature engineering over player-level and team-level statistics
-- XGBoost, CatBoost were used for the final ensemble model
+- XGBoost and CatBoost are combined into the final ensemble model.
 - Separate models for different stages of a match
 - A Rust-based live event server
 - A Python live prediction script
 - A PySide6 in-game overlay
 - A standalone Windows launcher
 
-The project is designed to run a complete live application rather than only offline ML Experiments.
+The project is designed to run a complete live application rather than only offline ML experiments.
 
 ## Features
 
@@ -47,7 +47,7 @@ The launcher accepts a match ID and starts the required application components.
 
 ## How it works
 
-The system has two main pipelines: an offline training pipeline and a live prediction pipeline. It can be explained by several inependent components:
+The system has two main pipelines: an offline training pipeline and a live prediction pipeline. It can be explained by several independent components:
 
 - **Data Collection** - retrieves historical match metadata.
 - **Preprocessing** - converts raw match metadata into polished training snapshots
@@ -130,7 +130,7 @@ For the 30-minute model, the models achieved:
 | CatBoost | 0.834 | 0.914 |
 | Ensemble | 0.828 | 0.913 |
 
-The training pipeline also include prbability callibration curve observation and SHAP-based model explainability.
+The training pipeline also include probability calibration curve observation and SHAP-based model explainability.
 
 **Note** These metrics are from the documented 30-minute training experiment. Performance can vary between different match-time models, as it is much harder to predict the winning team at the beginning of the game and easier at the end.
 
@@ -175,13 +175,13 @@ Additionally, I plan to train deep learning models and add more features to incr
 
 This is an unofficial community-made project and is **not affiliated with, endorsed by, or sponsored by Valve Corporation**. 
 
-Dealock and related game assets, names, and trademarks belong to their respective owners.
+Deadlock and related game assets, names, and trademarks belong to their respective owners.
 
 The predictions produced by this software are statistical estimates for educational and experimental purposes. They should not be interpreted as guaranteed match outcomes.
 
 ## Credits
 
-This project uses the [Deadlock API](https://github.com/deadlock-api/deadlock-api) for Deadlock match data and live event functionality. Huge appreciation and respect to the developer of this project. Without it, this project would never have a chance for existance.
+This project uses the [Deadlock API](https://github.com/deadlock-api/deadlock-api) for Deadlock match data and live event functionality. Huge appreciation to the developers of the Deadlock API. This project would not have been possible without their work.
 
 The project also relies on open-source Python and machine-learning libraries including XGBoost, CatBoost, pandas, numpy, scikit-learn, Joblib, PySide6, and related dependencies. See the ['requirements'](requirements.txt) for specific versions used.
 
