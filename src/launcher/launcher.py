@@ -51,7 +51,7 @@ def cleanup():
 
 
 
-def stop_process(process):
+def stop_process(process, exe_name=None):
     if process is not None:
         try:
             if process.poll() is None:
